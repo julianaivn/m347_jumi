@@ -5,7 +5,7 @@
 The part of the command that is 'docker inspect' does exactly what it says it inspect containers, yet it appeared a lot of information so i wanted to only receive only the IP Adress so i specified it.The part '-f '{{...}}'' lets me format the output using Go templating instead of dumping the full JSON. Then {{range .NetworkSettings.Networks}} loops through all networks the container is connected to. Then {{.IPAddress}} makes that for each network, it fetches the IP address assigned to the container in that network. And last but not least {{end}} ends the loop as well says.
 ### 2. Start an interactive session on busybox1 and enter the following commands, or find the correct commands: 
 ##### 1. Which default gateway is entered? Which container has the same?
-![Busy1Ip](./Screenshots/[Busy1Ip.png)
+![Busy1Ip](./Screenshots/Busy1Ip.png)
 ##### 2. ping busybox2
 ![Busy1Ping2](./Screenshots/Busy1Ping2.png)
 ##### 3. ping busybox3
