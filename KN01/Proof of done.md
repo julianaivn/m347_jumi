@@ -35,4 +35,9 @@ So the proper command to delete ALL containers would be 'docker container prune'
 ### 10. Remove the two images from your local environment using the appropriate Docker command
 ![DeletionImages](./Screenshots/DeletionImages.png)
 # C) Registry and repository
+![privateRepository](./Screenshots/privateRepository.png)
 # D) Private repository
+![CommandNginxRepo](./Screenshots/CommandNginxRepo.png)
+![DockNginxRepo](./Screenshots/DockNginxRepo.png)
+![CommandMariaRepo](./Screenshots/CommandMariaRepo.png)
+![DockMariaRepo](./Screenshots/DockMariaRepo.png)
