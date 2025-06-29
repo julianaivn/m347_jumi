@@ -1,13 +1,8 @@
 ### 1. What IP addresses did busybox1, busybox2, busybox3 and busybox4 obtain? You can also solve this task withdocker inspect
 ![BusyNetCreation](./Screenshots/BusyNetCreation.png)
-![InspectBusy1](./Screenshots/InspectBusy1.png)
-Ip Adresses:"172.17.0.2"
-![InspectBusy2](./Screenshots/InspectBusy2.png)
-Ip Adresses:"172.17.0.3"
-![InspectBusy3](./Screenshots/InspectBusy3.png)
-Ip Adresses:"172.18.0.2"
-![InspectBusy4](./Screenshots/InspectBusy4.png)
-Ip Adresses:"172.18.0.3"
+![InspectBusy](./Screenshots/InspectBusy.png)
+##### Explanation of command docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' busybox1
+The part of the command that is 'docker inspect' does exactly what it says it inspect containers, yet it appeared a lot of information so i wanted to only receive only the IP Adress so i specified it.The part '-f '{{...}}'' lets me format the output using Go templating instead of dumping the full JSON. Then {{range .NetworkSettings.Networks}} loops through all networks the container is connected to. Then {{.IPAddress}} makes that for each network, it fetches the IP address assigned to the container in that network. And last but not least {{end}} ends the loop as well says.
 ### 2. Start an interactive session on busybox1 and enter the following commands, or find the correct commands: 
 ##### 1. Which default gateway is entered? Which container has the same?
 ##### 2. ping busybox2
