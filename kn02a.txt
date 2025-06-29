@@ -1,0 +1,21 @@
+kn02a
+
+dokumentiertes dockerfile:
+
+FROM nginx
+# → Nimmt das offizielle nginx-Image als Basis
+
+WORKDIR /usr/share/nginx/html
+# → Setzt das Arbeitsverzeichnis innerhalb des Containers
+
+COPY helloworld.html .
+# → Kopiert deine HTML-Datei ins Arbeitsverzeichnis (also in nginx-Verzeichnis)
+
+EXPOSE 80
+# → Teilt Docker mit, dass dieser Container Port 80 nutzt
+
+---
+
+docker build -t jvl1an4/m347:kn02a .
+docker run -d -p 8085:80 --name kn02a-web jvl1an4/m347:kn02a
+docker push jvl1an4/m347:kn02a
