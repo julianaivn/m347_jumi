@@ -37,7 +37,21 @@ So the proper command to delete ALL containers would be 'docker container prune'
 # C) Registry and repository
 ![privateRepository](./Screenshots/privateRepository.png)
 # D) Private repository
+### Nginx
 ![CommandNginxRepo](./Screenshots/CommandNginxRepo.png)
 ![DockNginxRepo](./Screenshots/DockNginxRepo.png)
+#### docker pull nginx:latest
+This command downloads the latest version of the official nginx image from Docker Hub onto my local machine.
+#### docker tag nginx:latest myusername/m347:nginx
+This command creates a new tag for the image I just pulled. It’s like giving it a new label so I can push it to my own repository.
+#### docker push myusername/m347:nginx
+This command uploads the tagged image to my Docker Hub private repository so it’s available online.
+### MariaDB
 ![CommandMariaRepo](./Screenshots/CommandMariaRepo.png)
 ![DockMariaRepo](./Screenshots/DockMariaRepo.png)
+#### docker pull mariadb:latest
+This command downloads the official MariaDB image from Docker Hub.
+#### docker tag mariadb:latest myusername/m347:mariadb
+This gives the MariaDB image a new tag so it can be pushed to my private Docker Hub repo, together with the nginx one.
+#### docker push myusername/m347:mariadb
+This uploads the MariaDB image to my private Docker Hub repository under the tag mariadb.
