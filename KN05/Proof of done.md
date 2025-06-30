@@ -36,7 +36,7 @@ I opened a new shell session inside the now-running vol1 container.
 Prints the content of the file again, now showing: Hello :). Which i rewrote previously.
 - IMPORTANT: Video provided in the screencast folder.
 
-#C) Memory with docker compose
+# C) Memory with docker compose
 
 ![Ccontainer1](./Screenshots/Ccontainer1.png)
 ![Ccontainer2](./Screenshots/Ccontainer2.png)
