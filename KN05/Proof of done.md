@@ -37,3 +37,5 @@ Prints the content of the file again, now showing: Hello :). Which i rewrote pre
 - IMPORTANT: Video provided in the screencast folder.
 
 #C) Memory with docker compose
+
+- IMPORTANT: Video provided in the screencast folder.
