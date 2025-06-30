@@ -38,4 +38,7 @@ Prints the content of the file again, now showing: Hello :). Which i rewrote pre
 
 #C) Memory with docker compose
 
+![Ccontainer1](./Screenshots/Ccontainer1.png)
+![Ccontainer2](./Screenshots/Ccontainer2.png)
+
 - IMPORTANT: Video provided in the screencast folder.
