@@ -17,3 +17,23 @@
 - Note: i tried to screencast this process like 5 times but it always cut without saving the video just when i open the file to edit it. Therefore the video provided is the aftermath.
 - IMPORTANT: Video provided in the screencast folder.
 # B) Volumes
+![BVolumes](./Screenshots/BVolumes.png)
+#### docker volume create kn05volume
+Creates a named volume called kn05volume.
+#### docker run -it --name vol1 -v kn05volume:/data busybox sh | docker run -it --name vol2 -v kn05volume:/data busybox sh
+Starts a container named vol1/vol2 using the BusyBox image.
+#### echo "Hello from the other side" > /data/message.txt
+This command creates a file inside the volume (/data/message.txt) and writes:Hello from the other side
+#### exit
+I left the BusyBox shell and stop the container session.
+#### cat /data/message.txt
+Displays the content of message.txt
+#### docker start vol1
+I restarted the first container (vol1) which was previously exited.
+#### docker exec -it vol1 sh
+I opened a new shell session inside the now-running vol1 container.
+#### cat /data/message.txt
+Prints the content of the file again, now showing: Hello :). Which i rewrote previously.
+- IMPORTANT: Video provided in the screencast folder.
+
+#C) Memory with docker compose
