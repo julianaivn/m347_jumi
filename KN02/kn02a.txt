@@ -9,7 +9,7 @@ WORKDIR /usr/share/nginx/html
 # → Setzt das Arbeitsverzeichnis innerhalb des Containers
 
 COPY helloworld.html .
-# → Kopiert deine HTML-Datei ins Arbeitsverzeichnis (also in nginx-Verzeichnis)
+# → Kopiert die HTML-Datei ins Arbeitsverzeichnis (also in nginx-Verzeichnis)
 
 EXPOSE 80
 # → Teilt Docker mit, dass dieser Container Port 80 nutzt
